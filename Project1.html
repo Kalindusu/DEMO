@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web page2</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="x-UA-Compatible"content="IE=edge"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-linux/0.9/font-linux.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.4.0/css/zocial.min.css" integrity="sha512-D+88+j7wBsrfUyRLxvAi/ZYJ+2xffS/A9skvhx8Q8cxXv5rVrNX5BYm+GblI1POb23bjAygg2nXytDHtoGc9lQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box; text-decoration: none;list-style: none;font-family:'Times New Roman', Times, serif; }
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid black;
+    
+}
+.btn{
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+    z-index:200;
+    display: none;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #4d9559 0%,#38703d 28.53%,#133917 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,ifr);
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+   
+
+}
+section{
+   padding: 0 19%;
+  
+}
+.hero-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 100px;
+
+    
+}
+.hero-img{
+    margin-top: 100px;
+
+}
+
+.hero-text h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+  
+}
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 60;
+    color: white;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+
+
+
+}
+.hero-img img{
+    height: auto;
+    width: 600px;
+    float: right;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+   
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: scale(1.2,1.2);
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    padding-right: 10px;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+   
+}
+.icon i{
+    display: block;
+    margin: 15px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+    padding-bottom: 10px;
+}
+.icon i:hover{
+    color:#4d9559;
+    transform: scale(.75);
+}
+
+.scroldown{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroldown i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background:#4d9559 ;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+.scroldown i:hover{
+    transform: scale(1.1);
+}
+@media (max-width:1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icon{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroldown{
+        right: 3%;
+        transform: .2s;
+    }
+}
+@media (max-width:1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width:1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+
+}
+@media (max-width:1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+
+    }
+    .hero-text{
+        padding-top: 115px;
+        width: 50%;
+       
+    }
+    .hero-img{
+        text-align: center;
+        
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+        
+
+        
+    }
+    .hero{
+        height: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icon{
+        display: none;
+
+    }
+    .scroldown{
+        display: none;
+    }
+
+    
+}
+@media (max-width:900px){
+    .btn{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top:100%;
+        right: -100%;
+        width: 250px;
+        height: 47vh;
+        background-color: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px ;
+
+    }
+    .navlist a{
+        display: block;
+        margin-left: 0;
+        margin: 10px 0;
+       
+    }
+    .navlist li{
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 300;
+        padding-top: 10px;
+
+    }
+    .navlist.open{
+        right: 0;
+    }
+    .hero-text{
+      width: 100%;
+      
+    }
+
+}
+@media (max-width:600px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">COC-STATS</a>
+       <ul class="navlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clans</a></li>
+        <li><a href="#">Town hall</a></li>
+        <li><a href="#">Troops</a></li>
+        <li><a href="#">Contacts</a></li>
+       </ul> 
+       <div class="btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+       </div> 
+        
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h5>#2 Trending</h5>
+            <h4>Lead Supercell</h4>
+            <h1>GOBLINES</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, laudantium!<br> ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            <a href="#">Compare</a>
+            <a href="#" class="ctaa"><i class="fa fa-play" aria-hidden="true"></i> Watch Gameplay</a>
+        </div>
+        <div class="hero-img">
+            <img src="C:\Users\Kalindu\Downloads\coc.png">
+        </div>
+
+    </section>
+    <div class="icon" class="ALL">
+        <a href="#"><i class="fa fa-university" aria-hidden="true"></i></a>
+        <a href="#"> <i class="fa fa-globe" aria-hidden="true"></i></a>
+        <a href="#"> <i class="fa fa-podcast" aria-hidden="true"></i></a>
+
+       
+  
+
+    </div>
+    <div class="scroldown">
+        <a href="#"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+    </div>
+    <script>
+        const toggleBtn=document.querySelector('.btn')
+        const toggleBtnIcon=document.querySelector('.btn i')
+        const dropDownMenu=document.querySelector('.navlist')
+
+        toggleBtn.onclick=function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen=dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList=isOpen
+            ?"fa-solid fa-xmark"
+            :"fa-solid fa-bars"
+        }
+    </script>
+    
+</body>
+</html>
